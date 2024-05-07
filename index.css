@@ -1,0 +1,303 @@
+@charset "utf-8";
+
+/* 全体設定 */
+
+section {
+  margin-top: 8rem;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+/* 【ヒーローヘッダー】 */
+
+#hero-title {
+  margin-top: 0;
+}
+
+#hero-title img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+#hero-title_text {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: white;
+  top: 50%;
+  left: 50%;
+  width: 60vw;
+  margin: 0 auto;
+  text-align-last: center;
+}
+
+#hero-title h1 {
+  font-size: 8rem;
+  margin: 0;
+}
+
+#hero-title_text1 {
+  font-size: 1.2rem;
+}
+
+/* 【News】 */
+
+#news ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* お知らせ同士の境界線は各お知らせの上についてるので一番最後のお知らせにだけ下にも線つけようねのアレ */
+#news ul li:last-of-type a {
+  border-bottom: 2px solid #aeaeb0;
+}
+
+.news_item {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  border-top: 2px solid #aeaeb0;
+  padding: 8px 15px 14px;
+  position: relative;
+}
+
+/* お知らせの日付 */
+.news_date {
+  color: #2e3ea6;
+  font-size: 0.9rem;
+  font-family: 'Fira Mono', 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Sans', 'ヒラギノ角ゴシック', YuGothic, 'Yu Gothic', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+/* お知らせの内容 */
+.news_title {
+  display: block;
+  color: #454545;
+  font-size: 1.05rem;
+  margin: 0 2rem 0 1rem;
+  text-align: justify;
+  line-height: normal;
+}
+
+/* >マーク（Material Symbols使用） */
+.news_item .material-symbols-outlined {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  font-variation-settings: 'opsz' 40;
+  font-size: 35px;
+}
+
+/* 【What's SSC】 */
+
+#whatsssc .flex_viewport>div {
+  position: relative;
+}
+
+/* スマホでは縦並び、PCでは横並びに */
+/*
+#whatsssc .flex_viewport > div {
+  flex: 3;
+}
+
+#whatsssc .flex_viewport p {
+  flex: 2;
+}
+*/
+
+#whatsssc p {
+  position: relative;
+  z-index: 10;
+}
+
+#whatsssc_fig1 {
+  position: absolute;
+  top: -10%;
+  right: -10vw;
+  width: 70%;
+  height: 20%;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0.8) 0%, rgba(9, 32, 107, 0.8) 50%, rgba(9, 45, 121, 0.8) 100%);
+  z-index: 3;
+}
+
+#whatsssc_img1 {
+  position: relative;
+  right: -10vw;
+  width: 80vw;
+  border-bottom-left-radius: 50px;
+  box-shadow: -40px 10px rgba(107, 158, 219, 0.1);
+}
+
+#whatsssc_fig2 {
+  position: absolute;
+  top: 60%;
+  left: -10vw;
+  width: 35%;
+  height: 70%;
+  background: linear-gradient(90deg, rgba(80, 180, 228, 0.5) 0%, rgba(148, 197, 219, 0.5) 100%);
+  z-index: 3;
+}
+
+#whatsssc_fig3 {
+  position: absolute;
+  top: 80%;
+  right: 2%;
+  width: 7%;
+  height: 120%;
+  background: linear-gradient(0deg, rgba(148, 197, 219, 0.5) 0%, rgba(80, 180, 228, 0.5) 100%);
+  z-index: 3;
+}
+
+/* 【Activities】 */
+
+#activities .flex_viewport>div {
+  position: relative;
+}
+
+/* スマホでは縦並び、PCでは横並びに */
+/*
+#activities .flex_viewport > div {
+  flex: 3;
+}
+
+#activities .flex_viewport p {
+  flex: 2;
+}
+*/
+
+#activities_img1 {
+  overflow-x: hidden;
+  position: relative;
+  left: -20vw;
+  width: 70vw;
+  height: 70vw;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 20px double rgba(58, 55, 222, 0.5);
+  z-index: 4;
+}
+
+#activities_img1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+#activities_fig1 {
+  position: absolute;
+  top: -8%;
+  right: 10%;
+  width: 35vw;
+  height: 35vw;
+  border-radius: 50%;
+  background: linear-gradient(45deg, rgba(95, 199, 191, 0.5) 0%, rgba(20, 101, 198, 0.5) 100%);
+  z-index: 3;
+}
+
+#activities_fig2 {
+  position: absolute;
+  top: 27%;
+  right: 5%;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(95, 179, 199, 0.5) 0%, rgba(100, 20, 198, 0.5) 100%);
+  z-index: 4;
+}
+
+#activities_fig3 {
+  position: absolute;
+  top: 60%;
+  right: 18%;
+  width: 40vw;
+  height: 40vw;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(95, 160, 199, 0.5) 0%, rgba(22, 20, 198, 0.5) 100%);
+  z-index: 4;
+}
+
+/* 【And More!】 */
+
+/* 変数の宣言 */
+:root {
+  /* 項目の横幅 */
+  --andmore_item_width: 40vw;
+}
+
+.andmore_item {
+  position: relative;
+  width: calc(var(--andmore_item_width) / sqrt(2));
+  height: calc(var(--andmore_item_width) / sqrt(2));
+  margin: calc((var(--andmore_item_width) - (var(--andmore_item_width) / sqrt(2))) / 2) auto;
+  overflow: hidden;
+  transform: rotate(45deg);
+  box-shadow: gray 1vw 1vw 2vw;
+}
+
+.andmore_item img {
+  max-width: var(--andmore_item_width);
+  margin: calc((var(--andmore_item_width) - (var(--andmore_item_width) / sqrt(2))) / 2 * -1) 0 0 calc((var(--andmore_item_width) - (var(--andmore_item_width) / sqrt(2))) / 2 * -1);
+  transform: rotate(-45deg);
+}
+
+.andmore_item div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(var(--andmore_item_width) / sqrt(2));
+  height: calc(var(--andmore_item_width) / sqrt(2));
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+
+.andmore_title, .andmore_subtitle {
+  width: calc(var(--andmore_item_width) / sqrt(2));
+  height: calc(var(--andmore_item_width) / sqrt(2));
+  line-height: calc(var(--andmore_item_width) / sqrt(2));
+  color: white;
+  transform: rotate(-45deg);
+  text-align: center;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+.andmore_title {
+  font-size: 5vw;
+  font-family: 'Fira Mono', 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Sans', 'ヒラギノ角ゴシック', YuGothic, 'Yu Gothic', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  position: relative;
+  top: 0vw;
+  left: 0vw;
+}
+
+.andmore_subtitle {
+  font-size: 3.5vw;
+  font-family: 'Train One', 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Sans', 'ヒラギノ角ゴシック', YuGothic, 'Yu Gothic', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  position: relative;
+  top: -24.3vw;
+  left: 4vw;
+}
+
+/* ここから位置調整 */
+#andmore_item1 .andmore_title {
+  top: 1vw;
+  left: -2vw;
+}
+
+#andmore_item1 {
+  top: 4vh;
+  left: -11vw;
+}
+
+#andmore_item2 {
+  top: -1vh;
+  left: 11vw;
+}
+
+#andmore_item3 {
+  top: -6vh;
+  left: -11vw;
+}
